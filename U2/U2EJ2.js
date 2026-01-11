@@ -26,6 +26,17 @@
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+async function fetchOctocat(){
+
+  let response = await fetch("https://api.github.com/users/octocat")
+
+  let data = await response.json()
+
+  return data
+
+
+}
+
 /**
  * TEST
  * The purpose of this code is purely for TESTING PURPOSES, 
